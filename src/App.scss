@@ -1,0 +1,133 @@
+body {
+    z-index: -99;
+    background-image: url('https://i.imgur.com/guZ6aUJ.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.App {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 40px solid transparent;
+    border-image: url('https://i.imgur.com/AS9JG6T.png') 60 60 round;
+}
+
+.App>* {
+    // z-index: -999999;
+}
+
+.hiddenByDefault {
+    opacity: 0;
+}
+
+.MuiPaper-root {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 40px solid transparent;
+    border-image: url('https://i.imgur.com/AS9JG6T.png') 60 60 round;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    max-width: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    overflow-x: hidden;
+    float: right;
+}
+
+.animationRight {
+    animation: animateDoorRight 2s normal forwards ease-in-out;
+}
+
+.animationLeft {
+    animation: animateDoorLeft 2s normal forwards ease-in-out;
+}
+
+.animationBorder {
+    animation: animateBorder 3s normal forwards ease-in-out;
+}
+
+.animationBackground {
+    animation: animateBackground 1s normal forwards ease-in-out;
+}
+
+.animationContent {
+    animation: animateContent 3s normal forwards ease-in-out;
+}
+
+
+.left {
+    left: 0%;
+    bottom: 50px;
+    background-image: url("https://i.imgur.com/wqbVDZV.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.right {
+    right: 0;
+    background-image: url("https://i.imgur.com/guaNYH5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@keyframes animateDoorRight {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+@keyframes animateDoorLeft {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes animateBorder {
+    0% {
+        border-image-width: 30px;
+    }
+
+    100% {
+        border-image-width: 0px;
+    }
+}
+
+@keyframes animateBackground {
+    0% {
+        background-size: 95% 100%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+
+@keyframes animateContent {
+    0% {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #262626;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.Messages-message {
+  text-align: right;
+  padding: 0 10px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
