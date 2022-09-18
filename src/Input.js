@@ -1,6 +1,7 @@
 import { useState, useEffect, Fragment } from 'react';
 import React from "react";
 import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 import { useDispatch, useSelector } from "react-redux";
 import { addNewPost } from "./features/postsSlice";
 import { TextField } from '@mui/material';
@@ -38,7 +39,7 @@ const Input = ({ scrollToBottom, classNamesInput, nickname }) => {
                     onChange={e => setText(e.target.value)}
                     value={text}
                 />
-                <Button type="submit" variant="contained">Wyślij</Button>
+                <Button type="submit" variant="contained" style={{ backgroundColor: '#8e969d' }}>Wyślij</Button>
             </form>
         </div>
     );

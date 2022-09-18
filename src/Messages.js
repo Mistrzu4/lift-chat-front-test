@@ -37,11 +37,14 @@ const Messages = ({ classNamesContent, scrollRef, scrollToBottom }) => {
                     <Typography variant="caption" display="block" gutterBottom style={{ opacity: '70%', marginBottom: '0px' }} >
                         {message.user}
                     </Typography>
-                    <Chip label={message.message} />
+
+                    <div className="Messages">
+                        <span>{message.message}</span>
+                    </div>
 
 
                 </div>
-            </li>
+            </li >
         );
     }
     return (
